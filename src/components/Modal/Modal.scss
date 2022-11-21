@@ -1,0 +1,38 @@
+body {
+  .modal {
+    &.fade .modal-dialog {
+      transition: all 0.3s ease-in-out;
+      transform: translate(0, 80px);
+      opacity: 0;
+    }
+    &.show .modal-dialog {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+    &-body {
+      padding: 24px 16px;
+    }
+    &-content {
+      border-radius: 0;
+    }
+    &-backdrop.show {
+      opacity: 0.65;
+    }
+    &-dialog {
+      max-width: 950px !important;
+    }
+    &-content {
+      border-radius: 0;
+    }
+    &-close {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 10;
+      padding: 6px;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

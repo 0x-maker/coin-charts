@@ -1,0 +1,12 @@
+export const APP_VERSION = '1.1.5';
+export const API_URL_COINCAP = 'https://api.coincap.io/v2';
+export const API_URL_SOCKET = 'wss://ws.coincap.io';
+export const APP_DIVIDER = '|';
+export const APP_TITLE_PREFFIX = 'Coin-Tracker By Artopia. Cryptocurrency Prices, Live Charts, and Market Data';
+export const APP_NAME = 'Coin-Tracker By Artopia';
+export const APP_MAIL = 'coin-tracker-support@artopia.dev';
+export const CHANGELLY_REF_ID = '3ynbitfg0s5h4ymu'; //PASTE YOUR CHANGELLY REFERAL ID
+export const CHANGELLY_EXANGE_URL = 'https://changelly.com';
+export const CHANGELLY_EXANGE_AMOUNT = 0.1;
+export const COINS_LIMIT = 2000; // Max size 2000 per request
+export const SYMBOL_EMPTY = '–';

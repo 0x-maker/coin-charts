@@ -1,0 +1,229 @@
+@import "../../assets/variables.scss";
+@import "../../assets/bootstrap.scss";
+@import "../../../node_modules/react-select/dist/react-select.css";
+
+.tracker-wrapper {
+  padding-top: 80px;
+}
+
+.app-table {
+  &-header {
+    font-weight: 600;
+    overflow: hidden;
+    font-size: 12px;
+    border-bottom: 1px solid #ebebeb;
+
+    .app-table-col {
+      padding: 5px 12px 5px 8px;
+
+      @media (min-width: 769px) {
+        padding: 10px 12px 10px 8px;
+      }
+    }
+  }
+
+  &-row {
+    overflow: hidden;
+    border-bottom: 1px solid #ebebeb;
+    transition: background 0.3s ease-in-out;
+    min-height: 360px;
+    font-size: 14px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    line-height: 30px;
+    color: #333;
+
+    @include media-breakpoint-up(sm) {
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+    }
+
+    & > span {
+      line-height: 1.5;
+    }
+
+    svg {
+      vertical-align: middle;
+    }
+
+    .anim-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      pointer-events: none;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    &:hover {
+      background-color: rgba($primary, 0.12);
+    }
+  }
+
+  &-col {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    padding: 8px 5px;
+
+    @media (min-width: 769px) {
+      width: 13.5%;
+      overflow: hidden;
+      padding: 8px 5px;
+
+      &-size {
+        &-mktcap {
+          width: 17%;
+        }
+
+        &-name {
+          width: 19%;
+        }
+
+        &-maxSupply {
+          width: 17%;
+        }
+
+        &-cap24hrChange {
+          width: 10%;
+        }
+
+        &-buttons {
+          width: 9%;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      &.text-right {
+        text-align: left !important;
+      }
+    }
+  }
+
+  &-coll-sort {
+    cursor: pointer;
+    position: relative;
+    padding-right: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+
+    &.active {
+      &:after {
+        position: absolute;
+        right: 0;
+        top: 15px;
+        font-size: 9px;
+      }
+    }
+
+    &:hover {
+      border-bottom-color: $primary;
+      color: $primary;
+    }
+  }
+
+  &-order {
+    &-asc {
+      .app-table-coll-sort {
+        &.active {
+          &:after {
+            content: "▲";
+          }
+        }
+      }
+    }
+
+    &-desc {
+      .app-table-coll-sort {
+        &.active {
+          &:after {
+            content: "▼";
+          }
+        }
+      }
+    }
+  }
+}
+
+.app-arrow {
+  vertical-align: middle;
+  margin: 0 4px;
+  line-height: 21px;
+}
+
+.anim {
+  // Up
+  &-up-entering {
+    transition: opacity 0.3s ease-in-out;
+    background: $color_up;
+    opacity: 0;
+  }
+
+  &-up-entered {
+    background: $color_up;
+    opacity: 1;
+  }
+
+  &-up-exiting {
+    transition: all 0.3s ease-in-out;
+    background: $color_up;
+    opacity: 1;
+  }
+
+  &-up-exited {
+    background: $color_up;
+    opacity: 0;
+  }
+
+  // Down
+  &-down-entering {
+    transition: all 0.3s ease-in-out;
+    background: $color_down;
+    opacity: 0;
+  }
+
+  &-down-entered {
+    background: $color_down;
+    opacity: 1;
+  }
+
+  &-down-exiting {
+    transition: all 0.3s ease-in-out;
+    background: $color_down;
+    opacity: 1;
+  }
+
+  &-down-exited {
+    background: $color_down;
+    opacity: 0;
+  }
+}
+
+.currency-selector {
+  width: 75px;
+  position: relative;
+}
+
+.tracker-sticky-header {
+  position: fixed;
+  top: 53px;
+  background-color: #fff;
+  left: 0;
+  width: 100%;
+  z-index: 980;
+  padding: 10px 0 0;
+
+  .form-group {
+    margin: 0 0 5px;
+
+    @include media-breakpoint-up(sm) {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.logo {
+  font-size: 21px;
+  vertical-align: middle;
+  transition: opacity 0.15s ease-in-out; }
+  .logo svg {
+    vertical-align: middle; }
+  .logo:hover {
+    opacity: 0.9; }
+
+.app-main {
+  padding-top: 66px; }
+
+.app-header {
+  background-color: #fff;
+  min-height: 53px; }
+  .app-header.navbar {
+    padding: 0; }
+  .app-header .container {
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 0.25em; }
+
+.anim-nav {
+  position: fixed;
+  left: 0;
+  top: -0px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  min-height: 53px;
+  z-index: 990;
+  padding: 13px 0;
+  transition: opacity 0.15s ease-in-out, top 0.15s ease-in-out; }
+  .anim-nav svg {
+    vertical-align: middle; }
+  .anim-nav-entering {
+    top: -0px;
+    opacity: 0; }
+  .anim-nav-entered {
+    top: 53px;
+    opacity: 1; }
+  .anim-nav-exiting {
+    top: 53px;
+    opacity: 1; }
+  .anim-nav-exited {
+    top: -0px;
+    opacity: 0; }

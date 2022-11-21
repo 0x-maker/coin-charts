@@ -1,0 +1,87 @@
+@import '../variables.scss';
+
+$theme-dark-bg: #222222;
+$theme-dark-border: darken($theme-dark-bg, 3%);
+.theme-dark {
+    background-color: $theme-dark-bg;
+    color: $white;
+    .anim-nav {
+        background-color: $theme-dark-bg;
+        border-bottom: 1px solid $theme-dark-border;
+    }
+    .app-header {
+        background-color: $theme-dark-bg;
+        .container {
+            border-bottom: 1px solid $theme-dark-border;
+        }
+        .logo {
+            color: $white;
+        }
+    }
+    .app-table-header {
+        border-bottom: 1px solid $theme-dark-border;
+    }
+    .app-table-row {
+        border-bottom: 1px solid $theme-dark-border;
+        color: $white;
+        &:hover {
+            background-color: rgba($primary, 0.28);
+        }
+    }
+    .form-control {
+        background-color: $theme-dark-bg !important;
+        border-color: $theme-dark-border;
+        color: $white;
+        &:focus {
+            color: $white;
+        }
+    }
+    .modal-content {
+        color: $white;
+        background-color: $theme-dark-bg;
+    }
+    .Select-control {
+        background-color: $theme-dark-bg;
+        color: $white;
+    }
+    .card {
+        background-color: $theme-dark-bg;
+        border-color: $theme-dark-border;
+    }
+    .Select-placeholder,
+    .Select--single>.Select-control .Select-value {
+        background-color: $theme-dark-bg;
+        color: $white;
+    }
+    .Select.has-value.Select--single>.Select-control .Select-value .Select-value-label,
+    .Select.has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label {
+        color: $white;
+    }
+    .Select-option {
+        color: $white;
+        background-color: $theme-dark-bg;
+    }
+    .Select-menu-outer {
+        background-color: $theme-dark-bg;
+        border-color: $theme-dark-border;
+    }
+    .Select.is-open>.Select-control,
+    .Select-control {
+        border-color: $theme-dark-border;
+    }
+    .loader-wrapper {
+        .overlay {
+            background-color: rgba($theme-dark-bg, 0.9);
+        }
+    }
+    .divider {
+        color: $black;
+    }
+    .custom-tooltip {
+        background-color: $theme-dark-bg;
+        border-color: $theme-dark-border;
+    }
+    .tracker-sticky-header {
+        background-color: $theme-dark-bg;
+    }
+}

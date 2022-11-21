@@ -1,0 +1,62 @@
+$header_nav_h: 53px;
+$header_h: 53px;
+
+.logo {
+    svg {
+        vertical-align: middle;
+    }
+    font-size: 21px;
+    vertical-align: middle;
+    transition: opacity 0.15s ease-in-out;
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.app-main {
+    padding-top: $header_h + 13px;
+}
+
+.app-header {
+    background-color: #fff;
+    min-height: $header_h;
+    &.navbar {
+        padding: 0;
+    }
+    .container {
+        border-bottom: 1px solid #ebebeb;
+        padding-bottom: 0.25em;
+    }
+}
+
+.anim-nav {
+    position: fixed;
+    left: 0;
+    top: -#{$header_h - $header_nav_h};
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    min-height: $header_nav_h;
+    z-index: 990;
+    padding: 13px 0;
+    transition: opacity 0.15s ease-in-out, top 0.15s ease-in-out;
+    svg {
+        vertical-align: middle;
+    }
+    &-entering {
+        top: -#{$header_h - $header_nav_h};
+        opacity: 0;
+    }
+    &-entered {
+        top: $header_h;
+        opacity: 1;
+    }
+    &-exiting {
+        top: $header_h;
+        opacity: 1;
+    }
+    &-exited {
+        top: -#{$header_h - $header_nav_h};
+        opacity: 0;
+    }
+}

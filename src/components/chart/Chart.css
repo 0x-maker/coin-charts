@@ -1,0 +1,15 @@
+.recharts-layer .recharts-text {
+  font-size: 13px; }
+
+.custom-tooltip {
+  padding: 4px 8px;
+  background-color: #fff;
+  border: 1px solid #ccc; }
+
+.empty-chart {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin: -12px 0; }

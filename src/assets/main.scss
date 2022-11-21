@@ -1,0 +1,117 @@
+@import "./variables";
+$select-input-border-radius: $border-radius;
+$select-input-height: 34px;
+$select-padding-vertical: 6px;
+$select-padding-horizontal: 8px;
+$select-input-box-shadow-focus: none;
+// @import "../../node_modules/react-select/scss/default.scss";
+@import "theme/dark.scss";
+body {
+  font-size: 13px;
+  .form-control {
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.full-item {
+  position: relative;
+  min-height: 700px;
+  .nav-link {
+    padding: 0.2rem 0.8rem;
+  }
+}
+
+.font-xs {
+  font-size: 60%;
+}
+
+.app-h {
+  min-height: 460px;
+}
+
+.input-icon {
+  position: relative;
+  border-radius: $border-radius;
+  overflow: hidden;
+  &.mb-3 {
+    margin-bottom: 4px !important;
+  }
+  .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px 4px;
+    pointer-events: none;
+    z-index: 10;
+    border-radius: $border-radius;
+  }
+}
+
+.logo {
+  &-img {
+    &.md {
+      width: 80px;
+      height: 80px;
+      @media (min-width: 1240px) {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+}
+
+.text-label {
+  color: #aaa;
+}
+
+.btn-sm {
+  padding: 0.25rem 1rem;
+}
+
+.item-footer {
+  .btn {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+}
+
+.font-xs {
+  font-size: 70%;
+}
+
+// Switcher
+.app-main {
+  .MuiSwitch-colorPrimary-13.MuiSwitch-checked-12 {
+    color: darken($primary, 5%);
+  }
+  .MuiSwitch-colorPrimary-13.MuiSwitch-checked-12 {
+    color: $primary;
+  }
+}
+
+.item-name {
+  line-height: 1.1;
+}
+
+.item-badge {
+  line-height: 1;
+  margin: 0 0 3px;
+
+  .badge {
+    color: $white;
+  }
+}
+
+.divider {
+  color: #e4e4e4;
+}
+
+.btn-link,
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}

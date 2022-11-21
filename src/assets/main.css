@@ -1,0 +1,135 @@
+.theme-dark {
+  background-color: #222222;
+  color: #fff; }
+  .theme-dark .anim-nav {
+    background-color: #222222;
+    border-bottom: 1px solid #1a1a1a; }
+  .theme-dark .app-header {
+    background-color: #222222; }
+    .theme-dark .app-header .container {
+      border-bottom: 1px solid #1a1a1a; }
+    .theme-dark .app-header .logo {
+      color: #fff; }
+  .theme-dark .app-table-header {
+    border-bottom: 1px solid #1a1a1a; }
+  .theme-dark .app-table-row {
+    border-bottom: 1px solid #1a1a1a;
+    color: #fff; }
+    .theme-dark .app-table-row:hover {
+      background-color: rgba(0, 152, 255, 0.28); }
+  .theme-dark .form-control {
+    background-color: #222222 !important;
+    border-color: #1a1a1a;
+    color: #fff; }
+    .theme-dark .form-control:focus {
+      color: #fff; }
+  .theme-dark .modal-content {
+    color: #fff;
+    background-color: #222222; }
+  .theme-dark .Select-control {
+    background-color: #222222;
+    color: #fff; }
+  .theme-dark .card {
+    background-color: #222222;
+    border-color: #1a1a1a; }
+  .theme-dark .Select-placeholder,
+  .theme-dark .Select--single > .Select-control .Select-value {
+    background-color: #222222;
+    color: #fff; }
+  .theme-dark .Select.has-value.Select--single > .Select-control .Select-value .Select-value-label,
+  .theme-dark .Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label {
+    color: #fff; }
+  .theme-dark .Select-option {
+    color: #fff;
+    background-color: #222222; }
+  .theme-dark .Select-menu-outer {
+    background-color: #222222;
+    border-color: #1a1a1a; }
+  .theme-dark .Select.is-open > .Select-control,
+  .theme-dark .Select-control {
+    border-color: #1a1a1a; }
+  .theme-dark .loader-wrapper .overlay {
+    background-color: rgba(34, 34, 34, 0.9); }
+  .theme-dark .divider {
+    color: #000; }
+  .theme-dark .custom-tooltip {
+    background-color: #222222;
+    border-color: #1a1a1a; }
+  .theme-dark .tracker-sticky-header {
+    background-color: #222222; }
+
+body {
+  font-size: 13px; }
+  body .form-control:focus {
+    outline: none;
+    box-shadow: none; }
+
+.full-item {
+  position: relative;
+  min-height: 700px; }
+  .full-item .nav-link {
+    padding: 0.2rem 0.8rem; }
+
+.font-xs {
+  font-size: 60%; }
+
+.app-h {
+  min-height: 460px; }
+
+.input-icon {
+  position: relative;
+  border-radius: 0.15em;
+  overflow: hidden; }
+  .input-icon.mb-3 {
+    margin-bottom: 4px !important; }
+  .input-icon .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px 4px;
+    pointer-events: none;
+    z-index: 10;
+    border-radius: 0.15em; }
+
+.logo-img.md {
+  width: 80px;
+  height: 80px; }
+  @media (min-width: 1240px) {
+    .logo-img.md {
+      width: 120px;
+      height: 120px; } }
+
+.text-label {
+  color: #aaa; }
+
+.btn-sm {
+  padding: 0.25rem 1rem; }
+
+.item-footer .btn {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem; }
+
+.font-xs {
+  font-size: 70%; }
+
+.app-main .MuiSwitch-colorPrimary-13.MuiSwitch-checked-12 {
+  color: #0089e6; }
+
+.app-main .MuiSwitch-colorPrimary-13.MuiSwitch-checked-12 {
+  color: #0098ff; }
+
+.item-name {
+  line-height: 1.1; }
+
+.item-badge {
+  line-height: 1;
+  margin: 0 0 3px; }
+  .item-badge .badge {
+    color: #fff; }
+
+.divider {
+  color: #e4e4e4; }
+
+.btn-link:hover,
+a:hover {
+  text-decoration: none; }
